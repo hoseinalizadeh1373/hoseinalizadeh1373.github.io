@@ -1,0 +1,42 @@
+
+body{
+    background: linear-gradient(to right ,#493240 ,#FF0099 );
+    background-size: 400% 400%;
+    
+    animation: gradient 7s ease-in-out infinite;
+    
+    color: rgb(194, 190, 171);
+    
+
+}
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 50% 100%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+.titr{
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.titr::after,
+  .titr::before{
+    background-image: linear-gradient(to right, #bfc9ca 0%, #c2cac0  51%, #d4d1bc  80%);
+    content: '';
+    padding: 0.1rem;
+    border-radius: 20px;
+    box-shadow: 2px 3px 3px 4px rgb(224, 224, 195);
+    flex: 1 1;
+    border-bottom: 1px solid #444;
+    margin: 15px;
+  }
