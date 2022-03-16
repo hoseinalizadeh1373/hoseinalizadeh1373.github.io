@@ -10,8 +10,32 @@
     <link rel="stylesheet" href="css/style_index.css">
 </head>
 <body>
-    <header>
+    <!-- <header> -->
     <h1 class="titr">لیست پروژه های گیتهاب من</h1>
-    </header>
+    <!-- </header> -->
+    <main >
+        <div class="container">
+            <button class="card">
+
+            <a href="./css-template/index.html">پروژه css</a>
+            </button>
+            <button class="card" onclick="func()">
+                <a href="#" >پروژه وب سایت</a>
+            </button>
+
+        </div>
+        <!-- <div class="alarm">
+
+        </div> -->
+        
+    </main>
+    <div id="snackbar">این پروژه  بعد از اتمام نمایش داده می شود !</div>
+    <script>
+        function func(){
+        let x =document.getElementById("snackbar");
+        x.className="show";
+        setTimeout(function(){x.className=x.className.replace("show","");},3000);
+        }
+    </script>
 </body>
 </html>

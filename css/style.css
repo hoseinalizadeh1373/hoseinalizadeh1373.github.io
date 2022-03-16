@@ -1,11 +1,11 @@
 
 @font-face {
-    font-family: "Vazir";
-    src: url('/fonts/Vazir.eot');
-    src: url('/fonts/Vazir.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/Vazir.woff2') format('woff2'),
-    url('/fonts/Vazir.woff') format('woff'),
-    url('/fonts/Vazir.ttf') format("truetype");
+    font-family: 'Vazir';
+    src: url('../fonts/Vazir.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Vazir.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Vazir.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/Vazir.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/Vazir.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 /* for reset */
 *{
@@ -15,10 +15,11 @@ box-sizing: border-box;
 letter-spacing: 4;
 }
 html{
-    
+    font-family: 'Vazir',Arial, Helvetica, sans-serif;
+
     direction: rtl;
 }
-body{
+/* body{
     font-family: 'Vazir',Arial, Helvetica, sans-serif;
     font-weight: 300;
-}
+} */

@@ -1,13 +1,15 @@
 
 body{
+    
     background: linear-gradient(to right ,#493240 ,#FF0099 );
-    background-size: 400% 400%;
-    
+    background-size: cover;    
     animation: gradient 7s ease-in-out infinite;
-    
     color: rgb(194, 190, 171);
-    
-
+    background-attachment: fixed;        
+}
+a{
+  font-family: 'Vazir',Arial, Helvetica, sans-serif;
+  font-weight: 500;
 }
 @keyframes gradient{
     0%{
@@ -28,7 +30,9 @@ body{
     justify-content: center;
     align-items: center;
     
+
 }
+
 .titr::after,
   .titr::before{
     background-image: linear-gradient(to right, #bfc9ca 0%, #c2cac0  51%, #d4d1bc  80%);
@@ -39,4 +43,121 @@ body{
     flex: 1 1;
     border-bottom: 1px solid #444;
     margin: 15px;
+  }
+  
+   .container{  
+    display: grid;
+    padding: 35px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+    border: 2px solid rgba(240, 29, 240, 0);
+      width: 60%;
+      height: 70vh;
+      border-radius: 15px;
+      position: absolute;
+      z-index: 1;
+      overflow: hidden;
+      right: 20%;
+      margin-top: 40px;
+      transition: all 0.1;
+    
+      backdrop-filter: blur(10px);       
+  }
+  .container::before{
+    box-sizing: border-box;
+    background: inherit;
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0px;
+    right: 25px;
+    bottom:0;
+    box-shadow: inset 0 0 200px rgba(255,255,255, .5);
+    filter: blur(10px);   
+    
+}
+
+
+  .card{
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px 0 rgba(240, 67, 240, 0.2),0 6px 8px 6px rgba(247, 227, 238, 0.1);
+padding: 16px 48px;
+background: none;
+border: 2px solid #ece2e2;
+color:#131313;
+font-size: 20px;
+cursor: pointer;
+position: relative;
+overflow: hidden;
+transition: all 0.5s;
+  } 
+  .card::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+   height: 120%; 
+    background-color: rgba(255, 255, 255, 0.4);
+    top: 50%;
+    transform: skewX(30deg)translate(-150%,-50%);
+    transition: all 0.5s;
+  }
+  .card:hover{
+    background-color: #ff7a00;
+    color: #fff;
+    box-shadow: 0px 4px 8px 0 rgba(240, 67, 240, 0.288),0 6px 8px 6px rgba(247, 227, 238, 0.4);
+  }
+  .card:hover:before{
+    transform: skewX(30deg)translate(150%,-50%);
+    transition-delay: 0.1s;
+  }
+  .card >a { 
+    text-decoration: none;
+    color: #131313;
+  }
+  #snackbar{
+    visibility: hidden;
+    min-width: 300px;
+    margin-left: -125px; 
+    
+    box-shadow: 0 4px 4px 0 rgba(253, 187, 5, 0.3), 0 3px 0 2px  rgba(241, 130, 2, 0.2);
+    background-color: #333; 
+    color: #fff; 
+    text-align: center; 
+    border-radius: 15px; 
+    padding: 16px; 
+    position: fixed;
+    z-index: 1;
+    left: 50%; 
+    bottom: 30px; 
+  }
+  #snackbar.show{
+visibility: visible;
+-webkit-animation: fadein 0.5s ,fadeout 0.5s 2.5s;
+animation: fadein 0.5s ,fadeout 0.5s 2.5s;
+  }
+  @-webkit-keyframes fadein{
+    from{bottom: 0;opacity: 0;}
+    to{bottom: 30px;opacity: 1;}
+  }
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  .alarm{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: red;
+    
   }
