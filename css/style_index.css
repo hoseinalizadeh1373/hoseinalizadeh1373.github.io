@@ -1,6 +1,6 @@
 
 body{
-    
+    text-align: center;    
     background: linear-gradient(to right ,#493240 ,#FF0099 );
     background-size: cover;    
     animation: gradient 7s ease-in-out infinite;
@@ -46,19 +46,20 @@ a{
   }
   
    .container{  
-    display: grid;
-    padding: 35px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 20px;
-    border: 2px solid rgba(240, 29, 240, 0);
-      width: 60%;
+
+      display: grid;
+      padding: 35px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-gap: 20px;
+      border: 2px solid rgba(240, 29, 240, 0);
+      width: 80%;
       height: 70vh;
       border-radius: 15px;
       position: absolute;
       z-index: 1;
       overflow: hidden;
-      right: 20%;
+      right: 10%;
       margin-top: 40px;
       transition: all 0.1;
     
@@ -80,17 +81,22 @@ a{
 
 
   .card{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 20px;
     box-shadow: 0px 4px 8px 0 rgba(240, 67, 240, 0.2),0 6px 8px 6px rgba(247, 227, 238, 0.1);
-padding: 16px 48px;
-background: none;
-border: 2px solid #ece2e2;
-color:#131313;
-font-size: 20px;
-cursor: pointer;
-position: relative;
-overflow: hidden;
-transition: all 0.5s;
+    padding: 16px 48px;
+    background: none;
+    border: 2px solid #ece2e2;
+    color:#131313;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+    text-align: center;
   } 
   .card::before{
     content: '';
@@ -114,6 +120,7 @@ transition: all 0.5s;
   .card >a { 
     text-decoration: none;
     color: #131313;
+    text-align: center;
   }
   #snackbar{
     visibility: hidden;

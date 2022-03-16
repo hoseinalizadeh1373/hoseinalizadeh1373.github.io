@@ -7,7 +7,7 @@
   body,html{
       margin: 0;
       background-color: aqua;
-       height: 100vh; 
+      height: 100vh; 
       
    
   }
@@ -16,16 +16,14 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-      height: 100vh;
-      background-color: yellow;
+    height: 100vh;
+    background-color: yellow;
   }
   a{
-z-index: 10;
-color: white;
-
+    z-index: 10;
+    color: white;
     font-family: 'Vazir',Arial, Helvetica, sans-serif;
     font-weight: 500;
-  
   }
 .container{
     z-index: 0;
@@ -66,7 +64,7 @@ color: white;
     margin-left: 2px;
     margin-right: 2px;
     background-color: black;
-    
+    animation-delay: 0.5s;    
     border-radius: 50px;
     /* transition: height ease-out 2s ; */
     animation: ball forwards 3s ;
