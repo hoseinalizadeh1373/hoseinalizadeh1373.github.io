@@ -9,7 +9,7 @@ body{
 }
 a{
   font-family: 'Vazir',Arial, Helvetica, sans-serif;
-  font-weight: 500;
+  font-weight: 300;
 }
 @keyframes gradient{
     0%{
@@ -44,7 +44,6 @@ a{
     border-bottom: 1px solid #444;
     margin: 15px;
   }
-  
    .container{  
 
       display: grid;
@@ -54,7 +53,7 @@ a{
       grid-gap: 20px;
       border: 2px solid rgba(240, 29, 240, 0);
       width: 80%;
-      height: 70vh;
+      height: auto;
       border-radius: 15px;
       position: absolute;
       z-index: 1;
@@ -62,7 +61,6 @@ a{
       right: 10%;
       margin-top: 40px;
       transition: all 0.1;
-    
       backdrop-filter: blur(10px);       
   }
   .container::before{
@@ -76,10 +74,7 @@ a{
     bottom:0;
     box-shadow: inset 0 0 200px rgba(255,255,255, .5);
     filter: blur(10px);   
-    
 }
-
-
   .card{
 
     display: flex;
@@ -87,7 +82,7 @@ a{
     align-items: center;
     border-radius: 20px;
     box-shadow: 0px 4px 8px 0 rgba(240, 67, 240, 0.2),0 6px 8px 6px rgba(247, 227, 238, 0.1);
-    padding: 16px 48px;
+    padding: 60px ;
     background: none;
     border: 2px solid #ece2e2;
     color:#131313;
@@ -95,18 +90,18 @@ a{
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    transition: all 0.5s;
+    transition: all 0.3s;
     text-align: center;
   } 
   .card::before{
     content: '';
     position: absolute;
-    width: 100px;
+    width: 180px;
    height: 120%; 
     background-color: rgba(255, 255, 255, 0.4);
     top: 50%;
     transform: skewX(30deg)translate(-150%,-50%);
-    transition: all 0.5s;
+    transition: all 0.3s;
   }
   .card:hover{
     background-color: #ff7a00;
