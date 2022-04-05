@@ -8,6 +8,7 @@ body{
     background-attachment: fixed;        
 }
 a{
+  text-decoration: none;
   font-family: 'Vazir',Arial, Helvetica, sans-serif;
   font-weight: 300;
 }
