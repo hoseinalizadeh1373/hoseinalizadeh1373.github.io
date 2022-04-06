@@ -1,0 +1,9 @@
+@media(max-width :500px){
+    .main{
+        width: 100%;
+    }
+    #buttons span{
+        outline: 0px;
+        
+    }
+}
