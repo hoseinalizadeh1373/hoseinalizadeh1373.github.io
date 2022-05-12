@@ -1,9 +1,6 @@
 @media(max-width :500px){
-<<<<<<< HEAD
-    .container{  
-=======
   .container{  
->>>>>>> cfecad029c933cb883247743fbef430db708d625
+
         display: grid;
         padding: 35px;
         grid-template-columns: 1fr 1fr ;
@@ -39,8 +36,6 @@
         transition: all 0.3s;
         text-align: center;
       } 
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> cfecad029c933cb883247743fbef430db708d625
+
