@@ -1,4 +1,4 @@
-@media(max-width :500px){
+@media(max-width :576px){
     .container{  
 
         display: grid;
@@ -6,11 +6,10 @@
         grid-template-columns: 1fr 1fr ;
         grid-template-rows: 1fr 1fr ;
         grid-gap: 20px;
-        border: 20px solid rgba(240, 29, 240, 1);
-        width: 90%;
+        border: 2px solid rgba(240, 29, 240, 1);
+        width: 80%;
         height: 70vh;
         border-radius: 15px;
-        background:yellow;
         position: absolute;
         z-index: 1;
         overflow: hidden;
