@@ -7,7 +7,7 @@
         grid-template-rows: 1fr 1fr ;
         grid-gap: 20px;
         border: 2px solid rgba(240, 29, 240, 0);
-        width: 80%;
+        width: 90%;
         height: 70vh;
         border-radius: 15px;
         position: absolute;
