@@ -10,6 +10,7 @@
         width: 90%;
         height: 70vh;
         border-radius: 15px;
+        background:yellow;
         position: absolute;
         z-index: 1;
         overflow: hidden;
